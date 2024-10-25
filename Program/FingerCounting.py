@@ -45,9 +45,9 @@ while True:
         finger = []
         #Right
         if lmList[tipIds[0] - 3][1] > lmList[tipIds[0] - 4][1]:
-            #>90
+            #>90-right
             
-            #0-90
+            #0-90-right
             if lmList[tipIds[4] - 3][1] > lmList[tipIds[0] - 4][1]:
                 #
                 if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1]:  
@@ -64,6 +64,19 @@ while True:
                     else:
                         finger.append(0)
                 #
+            #0-90-left
+            elif lmList[tipIds[1] - 3][1] < lmList[tipIds[0] - 4][1]:
+                #
+                if lmList[tipIds[0]][2] > lmList[tipIds[0] - 1][2]:
+                    finger.append(0)
+                else: 
+                    finger.append(1)  
+                folderpath = "Python Project/Hand-Tracking/Image right"
+                for id in range(1, 5):
+                    if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
+                        finger.append(1)
+                    else:
+                        finger.append(0)
             else:
                 if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1]:  
                     finger.append(1)  
