@@ -15,7 +15,7 @@ Right 90 deg
     Then Hand rotate 90 deg
 
 Left - 45 deg
-    If 17 compare left side or equal with 0  
+    If 2 compare rihgt side or equal with 0  
     Then Hand rotate -45 deg
 
 Left - 90 deg
@@ -23,7 +23,7 @@ Left - 90 deg
     Then Hand rotate -90 deg
 
 Left 45 deg
-    If 2 compare right side or equal with 0  
+    If 17 compare left side or equal with 0  
     Then Hand rotate 45 deg
 
 Left 90 deg
