@@ -73,13 +73,6 @@ while True:
             #0-90-right
             elif lmList[tipIds[4] - 3][1] > lmList[tipIds[0] - 4][1]:
                 #
-                if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1]:  
-                    if lmList[tipIds[1] - 3][1] > lmList[tipIds[0]][1]:
-                        finger.append(0)
-                    else:
-                        finger.append(1)  
-                else:
-                    finger.append(0)  
                 folderpath = "Python Project/Hand-Tracking/Image rotate/Image right 90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
