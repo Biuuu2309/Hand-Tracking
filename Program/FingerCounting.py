@@ -52,7 +52,7 @@ while True:
                     finger.append(0)
                 else:
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image right"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image right over -90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][1] > lmList[tipIds[id] - 2][1]:
                         finger.append(0)
@@ -65,7 +65,7 @@ while True:
                     finger.append(0)
                 else:
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image right"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image right over 90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][1] < lmList[tipIds[id] - 2][1]:
                         finger.append(0)
@@ -81,7 +81,7 @@ while True:
                         finger.append(1)  
                 else:
                     finger.append(0)  
-                folderpath = "Python Project/Hand-Tracking/Image right"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image right 90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
                         finger.append(1)
@@ -95,7 +95,7 @@ while True:
                     finger.append(0)
                 else: 
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image right"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image right -90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
                         finger.append(1)
@@ -106,7 +106,7 @@ while True:
                     finger.append(1)  
                 else:
                     finger.append(0)  
-                folderpath = "Python Project/Hand-Tracking/Image right"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image right 0"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
                         finger.append(1)
@@ -115,28 +115,27 @@ while True:
         #Left
         else:
             
-            #>90-left
+            #>90-right
             if lmList[tipIds[4] - 3][2] > lmList[tipIds[0] - 4][2]:
                 #
-                print("biu1")
                 if lmList[tipIds[0]][2] > lmList[tipIds[0] - 1][2]:
                     finger.append(0)
                 else:
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image left"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image left over 90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][1] > lmList[tipIds[id] - 2][1]:
                         finger.append(1)
                     else:
                         finger.append(0)
-            #>90-right
+            #>90-left
             elif lmList[tipIds[1] - 3][2] > lmList[tipIds[0] - 4][2]:
                 #
                 if lmList[tipIds[0]][2] < lmList[tipIds[0] - 1][2]:
                     finger.append(0)
                 else:
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image left"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image left over -90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][1] > lmList[tipIds[id] - 2][1]:
                         finger.append(0)
@@ -149,7 +148,7 @@ while True:
                     finger.append(0)
                 else:
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image left"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image left 90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
                         finger.append(1)
@@ -162,7 +161,7 @@ while True:
                     finger.append(0)
                 else: 
                     finger.append(1)  
-                folderpath = "Python Project/Hand-Tracking/Image left"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image left -90"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
                         finger.append(1)
@@ -173,7 +172,7 @@ while True:
                     finger.append(1)  
                 else:
                     finger.append(0)  
-                folderpath = "Python Project/Hand-Tracking/Image left"
+                folderpath = "Python Project/Hand-Tracking/Image rotate/Image left 0"
                 for id in range(1, 5):
                     if lmList[tipIds[id]][2] < lmList[tipIds[id] - 2][2]:
                         finger.append(1)
