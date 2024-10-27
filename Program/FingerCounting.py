@@ -2,7 +2,6 @@ import cv2
 import time
 import os
 import sys
-
 import cvzone.SerialModule
 import HandTrackingModulee as htm  
 import cvzone
